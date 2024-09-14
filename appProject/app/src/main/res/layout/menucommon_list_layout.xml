@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="outview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.design.appproject.widget.MyFlexBoxLayout
+            app:flexWrap="wrap"
+            style="@style/list_box_style">
+
+        <com.design.appproject.widget.SmartRecyclerView
+            style="@style/list_list_box_style"
+            android:layout_height="match_parent"
+            android:id="@+id/srv"/>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+    <com.design.appproject.widget.MyButton
+        style="@style/list_add_style"
+        android:text="新增"
+        android:gravity="center"
+        android:id="@+id/add_btn"/>
+</FrameLayout>

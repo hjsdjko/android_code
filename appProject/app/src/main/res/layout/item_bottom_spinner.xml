@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_option"
+    android:layout_width="match_parent"
+    android:textColor="@color/common_title_color"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="16sp" />

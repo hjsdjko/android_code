@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    style="@style/detail_detail_hot_item_box_style">
+</com.design.appproject.widget.MyFlexBoxLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:flexWrap="wrap"
+    style="@style/list_list_one_item_box_style">
+    <com.design.appproject.widget.MyImageView
+        android:id="@+id/picture_iv"
+        style="@style/list_list_one_item_img_style" />
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/wupinmingcheng_tv"
+        style="@style/list_list_one_item_title_style"/>
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/wupinzhuangtai_tv"
+        style="@style/list_list_one_item_title_style"/>
+    <com.design.appproject.widget.MyFlexBoxLayout
+        android:id="@+id/bottom_ll"
+        app:flexWrap="wrap"
+        style="@style/list_list_change_box_style">
+        <com.design.appproject.widget.MyFlexBoxLayout
+            android:id="@+id/edit_fl"
+            app:flexWrap="wrap"
+            style="@style/list_list_change_edit_box_style">
+            <com.design.appproject.widget.MyTextView
+                android:id="@+id/edit_icon_tv"
+                android:text="&#xe63e;"
+                style="@style/list_list_change_edit_icon_style"/>
+            <com.design.appproject.widget.MyTextView
+                android:id="@+id/edit_tv"
+                android:text="修改"
+                style="@style/list_list_change_edit_text_style"/>
+        </com.design.appproject.widget.MyFlexBoxLayout>
+
+        <com.design.appproject.widget.MyFlexBoxLayout
+            android:id="@+id/delete_fl"
+            app:flexWrap="wrap"
+            style="@style/list_list_change_del_box_style">
+            <com.design.appproject.widget.MyTextView
+                android:id="@+id/delete_icon_tv"
+                android:text="&#xe61a;"
+                style="@style/list_list_change_del_icon_style"/>
+            <com.design.appproject.widget.MyTextView
+                android:id="@+id/delete_tv"
+                android:text="删除"
+                style="@style/list_list_change_del_text_style"/>
+        </com.design.appproject.widget.MyFlexBoxLayout>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+</com.design.appproject.widget.MyFlexBoxLayout>

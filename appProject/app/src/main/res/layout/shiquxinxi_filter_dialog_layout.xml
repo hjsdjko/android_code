@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/dialog_nsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/dialog_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.design.appproject.widget.MyLinearLayout
+        android:id="@+id/box_mll"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:layout_height="match_parent"
+        style="@style/list_category_screen_box_style">
+        <com.design.appproject.widget.MyFlexBoxLayout
+            app:flexWrap="wrap"
+            style="@style/list_category_screen_input_box_style">
+            <com.design.appproject.widget.MyTextView
+                android:text="拾取地点"
+                style="@style/list_category_screen_input_label_style"/>
+            <com.design.appproject.widget.MyEditTextView
+                android:id="@+id/shiqudidian_et"
+                android:hint="请输入拾取地点"
+                android:gravity="center_vertical"
+                style="@style/list_category_screen_input_item_style"/>
+        </com.design.appproject.widget.MyFlexBoxLayout>
+        <com.design.appproject.widget.MyFlexBoxLayout
+            app:flexWrap="wrap"
+            style="@style/list_category_screen_btn_box_style">
+            <com.design.appproject.widget.MyButton
+                android:id="@+id/reset_btn"
+                android:text="重置"
+                style="@style/list_category_screen_btn_reset_style"/>
+            <com.design.appproject.widget.MyButton
+                android:id="@+id/ensure_btn"
+                android:text="确定"
+                style="@style/list_category_screen_btn_confirm_style"/>
+        </com.design.appproject.widget.MyFlexBoxLayout>
+</com.design.appproject.widget.MyLinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/fragment_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="11dp"
+        android:layout="@layout/common_titlebar" />
+
+    <ViewStub
+        android:id="@+id/state_view_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:layout="@layout/common_stateview" />
+</FrameLayout>

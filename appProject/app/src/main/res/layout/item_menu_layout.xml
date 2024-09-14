@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/me_list_item_style">
+    <com.design.appproject.widget.MyTextView
+        style="@style/me_list_img_style"
+        android:id="@+id/icon_start_tv"/>
+    <com.design.appproject.widget.MyTextView
+        style="@style/me_list_text_style"
+        android:id="@+id/content_tv"/>
+    <com.design.appproject.widget.MyTextView
+        style="@style/me_list_icon_style"
+        android:text="&#xe602;"
+        android:id="@+id/icon_end_tv"/>
+</com.design.appproject.widget.MyFlexBoxLayout>

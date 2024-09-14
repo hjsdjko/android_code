@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.CommonTitleBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:visibility="visible"
+    app:common_titleColor="@color/navigation_color"
+    android:background="@color/navigation_backgroundColor"
+    app:common_leftSrc="@drawable/qmui_icon_quick_action_more_arrow_left"
+    android:layout_width="match_parent"
+    android:layout_height="45dp" />

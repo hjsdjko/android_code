@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hot_fbl"
+    app:flexWrap="wrap"
+    style="@style/list_hot_box_style">
+    <com.design.appproject.widget.MyTextView
+        style="@style/list_hot_title_style"
+        android:text="热门信息"/>
+    <com.design.appproject.widget.MyFlexBoxLayout
+        android:id="@+id/hot_item_fbl"
+        app:flexWrap="wrap"
+        style="@style/list_hot_box1_style"/>
+</com.design.appproject.widget.MyFlexBoxLayout>

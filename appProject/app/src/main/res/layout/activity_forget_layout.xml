@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/resetpwd_box_style">
+    <com.design.appproject.widget.MyLinearLayout
+        android:id="@+id/resetpwd_myl"
+        style="@style/resetpwd_form_style"
+        android:orientation="vertical">
+    <com.design.appproject.widget.MyFrameLayout
+        android:tag="step1"
+        style="@style/resetpwd_item_box_style">
+        <com.design.appproject.widget.MyEditTextView
+            android:id="@+id/username_et"
+            android:gravity="center_vertical"
+            style="@style/resetpwd_item_input_style"
+            android:hint="请输入您的账号" />
+    </com.design.appproject.widget.MyFrameLayout>
+        <com.design.appproject.widget.MyFrameLayout
+            android:tag="step1"
+            style="@style/resetpwd_picker_box_style">
+            <com.design.appproject.widget.BottomSpinner
+                android:id="@+id/usertype_bs"
+                style="@style/resetpwd_picker_text_style"
+                android:hint="请选择登录用户类型" />
+        </com.design.appproject.widget.MyFrameLayout>
+        <com.design.appproject.widget.MyFrameLayout
+            android:tag="step2"
+            style="@style/resetpwd_item_box_style">
+            <com.design.appproject.widget.MyTextView
+                android:id="@+id/pquestion_tv"
+                style="@style/resetpwd_item_input_style"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="密保问题" />
+        </com.design.appproject.widget.MyFrameLayout>
+        <com.design.appproject.widget.MyFrameLayout
+            android:tag="step2"
+            style="@style/resetpwd_item_box_style">
+            <com.design.appproject.widget.MyEditTextView
+                android:id="@+id/panswer_et"
+                style="@style/resetpwd_item_input_style"
+                android:gravity="center_vertical"
+                android:hint="密保答案" />
+        </com.design.appproject.widget.MyFrameLayout>
+
+        <com.design.appproject.widget.MyFrameLayout
+            android:tag="step3"
+            style="@style/resetpwd_item_box_style">
+            <com.design.appproject.widget.MyEditTextView
+                android:id="@+id/password_et"
+                style="@style/resetpwd_item_input_style"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:hint="密码" />
+        </com.design.appproject.widget.MyFrameLayout>
+        <com.design.appproject.widget.MyFrameLayout
+            android:tag="step3"
+            style="@style/resetpwd_item_box_style">
+            <com.design.appproject.widget.MyEditTextView
+                android:id="@+id/ensure_password_et"
+                android:gravity="center_vertical"
+                style="@style/resetpwd_item_input_style"
+                android:inputType="textPassword"
+                android:hint="确认密码" />
+        </com.design.appproject.widget.MyFrameLayout>
+
+    <com.design.appproject.widget.MyButton
+        android:id="@+id/next_btn"
+        android:gravity="center"
+        style="@style/resetpwd_btn_style"
+        android:text="登录" />
+</com.design.appproject.widget.MyLinearLayout>
+</com.design.appproject.widget.MyFrameLayout>

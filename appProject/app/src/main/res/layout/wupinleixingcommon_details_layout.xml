@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <com.design.appproject.widget.MyLinearLayout
+                    style="@style/detail_box_style"
+                    android:orientation="vertical">
+                    <com.design.appproject.widget.MyFlexBoxLayout
+                        app:flexWrap="wrap"
+                        style="@style/detail_detail_box_style">
+                        <com.design.appproject.widget.MyFlexBoxLayout
+                            style="@style/detail_detail_item_box_style">
+                            <com.design.appproject.widget.MyTextView
+                                android:text="物品类型："
+                                style="@style/detail_detail_item_label_style"/>
+                            <com.design.appproject.widget.MyTextView
+                                android:id="@+id/wupinleixing_tv"
+                                style="@style/detail_detail_item_text_style"/>
+                        </com.design.appproject.widget.MyFlexBoxLayout>
+                    </com.design.appproject.widget.MyFlexBoxLayout>
+                    <com.design.appproject.widget.MyFlexBoxLayout
+                        style="@style/detail_detail_btn_box_style">
+                    </com.design.appproject.widget.MyFlexBoxLayout>
+                </com.design.appproject.widget.MyLinearLayout>
+        </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

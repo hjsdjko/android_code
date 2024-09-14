@@ -1,0 +1,145 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+apply from: "$rootDir/dependencies.gradle"
+
+android {
+    compileSdk versions.compileSdk
+
+    defaultConfig {
+        applicationId "com.design.appproject"
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+        versionCode versions.versionCode
+        versionName versions.versionName
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets{
+        main{
+            res.srcDirs =
+                    [       'src/main/res/mipmap-xxhdpi/tabicon1',
+                            'src/main/res/mipmap-xxhdpi/tabicon2',
+                            'src/main/res/mipmap-xxhdpi/tabicon3',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+    buildTypes {
+        release {
+            jniDebuggable false
+            debuggable false
+            shrinkResources true
+            zipAlignEnabled true
+            minifyEnabled true// 是否进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+            debuggable true
+            shrinkResources false
+            zipAlignEnabled false
+            minifyEnabled false// 是否进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'appproject'
+            keyPassword '123456'
+            storeFile file('../appproject.jks')
+            storePassword '123456'
+        }
+        debug {
+            keyAlias 'appproject'
+            keyPassword '123456'
+            storeFile file('../appproject.jks')
+            storePassword '123456'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+            disable "Instantiatable"
+        }
+    }
+}
+// kotlin ARouter 配置方式
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+        arg("room.schemaLocation": "$projectDir/schemas".toString())
+    }
+    generateStubs = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":union_basic")
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+
+    api 'com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0'
+    api 'com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-ktx:2.1.0'
+    api "androidx.activity:activity-ktx:1.6.1"
+    api 'androidx.fragment:fragment:1.5.5'
+    api "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    api "androidx.navigation:navigation-ui-ktx:2.5.3"
+    api 'io.github.youth5201314:banner:2.2.2'
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.9"
+    api "org.greenrobot:eventbus:3.2.0"
+    api 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+    api 'com.github.li-xiaojun:XPopup:2.9.19' // for androidx
+    api 'org.litepal.guolindev:core:3.2.3'//
+    api 'com.github.lygttpod:SuperTextView:2.4.6'
+    api 'androidx.multidex:multidex:2.0.1'//
+    api 'jp.wasabeef:glide-transformations:4.3.0'
+    //路由
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+    api "com.alibaba:arouter-api:1.5.2"
+    api 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:WheelPicker:4.1.11'
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+    //规则相关
+    implementation 'org.jsoup:jsoup:1.15.1'
+    implementation 'com.jayway.jsonpath:json-path:2.7.0'
+    implementation 'cn.wanghaomiao:JsoupXpath:2.5.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.14'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.github.jeremyliao:live-event-bus-x:1.8.0'
+    implementation 'com.android.support:appcompat-v7:1.9.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.9.0'
+    implementation 'jp.wasabeef:richeditor-android:2.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.7.10"
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+
+    //3D地图so及jar
+//    implementation 'com.amap.api:3dmap:latest.integration'
+    implementation 'com.amap.api:navi-3dmap:9.8.2_3dmap9.8.2'
+    //搜索功能
+    implementation 'com.amap.api:search:9.7.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="CommonTitleBarView">
+        <attr name="common_title" format="string" />
+        <attr name="common_smalltitle" format="string" />
+        <attr name="common_titleColor" format="color" />
+        <attr name="common_leftSrc" format="reference" />
+        <attr name="common_leftVisible" format="boolean" />
+        <attr name="common_rightSrc" format="reference" />
+        <attr name="common_rightSrcSec" format="reference" />
+        <attr name="common_rightText" format="string" />
+        <attr name="common_sRightTextBackground" format="reference" />
+        <attr name="common_leftTextSub" format="string" />
+        <attr name="common_leftText" format="string" />
+        <attr name="common_rightTextColor" format="color" />
+        <attr name="common_leftTextColor" format="color" />
+        <attr name="common_rightVisible" format="boolean" />
+        <attr name="common_lineColor" format="color" />
+        <attr name="common_lineVisible" format="boolean" />
+        <attr name="common_whiteBar" format="boolean" />
+        <attr name="common_barBg" format="color" />
+        <attr name="common_subtitle" format="string" />
+        <attr name="common_isTranslucent" format="boolean" /><!--        是否沉浸式状态-->
+    </declare-styleable>
+
+    <declare-styleable name="CommonGrideImageView">
+        <attr name="common_showDeleteIcon" format="boolean" />   <!--是否展示删除按钮-->
+        <attr name="common_imageWidth" format="dimension" />
+        <attr name="common_imageHeight" format="dimension" />
+        <attr name="common_spacing" format="dimension" /> <!--图片间距-->
+        <attr name="common_row_count" format="integer" /> <!--单行最多显示个数-->
+        <attr name="common_max_count" format="integer" /> <!--总最多显示个数-->
+    </declare-styleable>
+
+    <declare-styleable name="CommonCustomEditView"><!---->
+        <attr name="common_hasCount" format="boolean" /><!-- 是否有字数统计-->
+        <attr name="common_maxLength" format="integer" min="0" /><!-- 最大字数限制-->
+        <attr name="common_hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonFormatContentView"><!---->
+        <attr name="common_formatType" format="enum">
+            <enum name="comment" value="0" />
+            <enum name="reply" value="1" />
+        </attr>
+        <attr name="common_moreTextCanClick" format="boolean" /><!-- 更多按钮是否可以点击-->
+    </declare-styleable>
+
+    <!--主题皮肤颜色值-->
+    <attr name="common_colorPrimary" format="color" tools:ignore="ResourceName" />
+    <attr name="common_colorPrimary_center" format="color" />
+    <attr name="common_colorPrimary_light" format="color" />
+    <attr name="common_transparent" format="color" />
+    <attr name="common_translucent" format="color" />
+    <attr name="common_white" format="color" />
+    <attr name="common_red" format="color" />
+    <attr name="common_color_gray" format="color" />
+    <attr name="common_bg_color" format="color" />
+    <attr name="common_bg_color_gray" format="color" />
+    <attr name="common_title_color" format="color" />
+    <attr name="common_title_gray_color" format="color" />
+    <attr name="common_title_gray_color2" format="color" />
+    <attr name="common_hint_color" format="color" />
+    <attr name="common_yellow_light_color" format="color" />
+    <attr name="common_yellow_color" format="color" />
+    <attr name="common_green_color" format="color" />
+    <attr name="common_gray_color_e9" format="color" />
+    <attr name="common_fans_level_1" format="color" />
+    <attr name="common_fans_level_2" format="color" />
+    <attr name="common_fans_level_3" format="color" />
+    <attr name="common_fans_level_4" format="color" />
+    <attr name="common_fans_level_5" format="color" />
+    <attr name="common_fans_level_6" format="color" />
+    <attr name="common_fans_level_7" format="color" />
+    <attr name="common_fans_level_8" format="color" />
+    <attr name="common_fans_level_9" format="color" />
+    <attr name="common_fans_level_10" format="color" />
+    <attr name="common_filter_gray_bg" format="color" />
+    <attr name="common_tip_orange" format="color" />
+    <attr name="common_icon_mode_change" format="reference" />
+    <attr name="common_indicator_vertical_line" format="reference" />
+    <attr name="common_arrow_black" format="reference" />
+
+    <attr name="calc_width" format="string"/> <!--cacl宽度计算-->
+    <attr name="calc_height" format="string"/> <!--cacl高度计算-->
+    <attr name="per_width" format="string" />   <!--百分比宽度-->
+    <attr name="per_height" format="string" />   <!--百分比高度-->
+    <attr name="per_marginLeft" format="string" />
+    <attr name="per_marginTop" format="string" />
+    <attr name="per_marginRight" format="string" />
+    <attr name="per_marginBottom" format="string" />
+    <attr name="per_paddingLeft" format="string" />
+    <attr name="per_paddingTop" format="string" />
+    <attr name="per_paddingRight" format="string" />
+    <attr name="per_paddingBottom" format="string" />
+    <attr name="http_background" format="string" />
+    <attr name="css_borderColor" format="color" />
+    <attr name="css_borderWidth" format="string" />
+    <attr name="css_left" format="dimension" />
+    <attr name="css_top" format="dimension" />
+    <attr name="css_right" format="dimension" />
+    <attr name="css_bottom" format="dimension" />
+    <attr name="css_position" format="string" />
+    <attr name="css_box_sizing" format="string" />
+    <attr name="css_background" format="string" />
+    <attr name="css_shadow" format="string" />
+    <declare-styleable name="MyCustomCSS">
+        <attr name="calc_width"/>
+        <attr name="calc_height"/>
+        <attr name="per_width"/>
+        <attr name="per_height"/>
+        <attr name="per_marginLeft"/>
+        <attr name="per_marginTop"/>
+        <attr name="per_marginRight"/>
+        <attr name="per_marginBottom"/>
+        <attr name="per_paddingLeft"/>
+        <attr name="per_paddingTop"/>
+        <attr name="per_paddingRight"/>
+        <attr name="per_paddingBottom"/>
+        <attr name="http_background"/>
+        <attr name="css_borderColor"/>
+        <attr name="css_borderWidth" />
+        <attr name="css_left"/>
+        <attr name="css_top"/>
+        <attr name="css_right"/>
+        <attr name="css_bottom"/>
+        <attr name="css_position"/>
+        <attr name="css_box_sizing"/>
+        <attr name="css_background"/>
+        <attr name="css_shadow"/>
+    </declare-styleable>
+</resources>

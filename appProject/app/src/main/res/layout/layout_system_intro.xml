@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/index_system_box_style"
+    android:id="@+id/system_ll">
+
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/system_title_tv"
+        style="@style/index_system_title_style"
+        tools:text="标题" />
+
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/system_subtitle_tv"
+        style="@style/index_system_subhead_style"
+        tools:text="副标题" />
+
+    <com.design.appproject.widget.MyFlexBoxLayout
+        android:id="@+id/system_img_ll"
+        style="@style/index_system_img_box_style">
+        <com.design.appproject.widget.MyImageView
+            android:id="@+id/system_img1_iv"
+            style="@style/index_system_img_img1_style"/>
+        <com.design.appproject.widget.MyImageView
+            android:id="@+id/system_img2_iv"
+            style="@style/index_system_img_img2_style"/>
+        <com.design.appproject.widget.MyImageView
+            android:id="@+id/system_img3_iv"
+            style="@style/index_system_img_img3_style"/>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/system_content_tv"
+        style="@style/index_system_desc_style"
+        tools:text="关于我们内容" />
+    <com.design.appproject.widget.MyFrameLayout
+        style="@style/index_system_box1_style"/>
+    <com.design.appproject.widget.MyFrameLayout
+        style="@style/index_system_box2_style"/>
+</com.design.appproject.widget.MyFlexBoxLayout>

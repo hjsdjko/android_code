@@ -1,0 +1,13 @@
+<com.design.appproject.widget.MyFlexBoxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:flexWrap="wrap"
+    style="@style/list_list_one_item_box_style">
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/title_tv"
+        style="@style/list_list_one_item_title_style"/>
+    <com.design.appproject.widget.MyImageView
+        android:id="@+id/picture_iv"
+        style="@style/list_list_one_item_img_style"/>
+</com.design.appproject.widget.MyFlexBoxLayout>

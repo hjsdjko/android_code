@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/login_box_style">
+    <com.design.appproject.widget.MyLinearLayout
+        style="@style/login_form_style"
+        android:orientation="vertical">
+    <com.design.appproject.widget.MyImageView
+        android:id="@+id/title_iv"
+        style="@style/login_img_style"/>
+    <com.design.appproject.widget.MyFrameLayout
+            style="@style/login_item_box_style">
+        <com.design.appproject.widget.MyEditTextView
+            android:id="@+id/username_et"
+            style="@style/login_item_input_style"
+            android:hint="请输入账号" />
+    </com.design.appproject.widget.MyFrameLayout>
+    <com.design.appproject.widget.MyFrameLayout
+        style="@style/login_item_box_style">
+        <com.design.appproject.widget.MyEditTextView
+            android:id="@+id/password_et"
+            style="@style/login_item_input_style"
+            android:inputType="textPassword"
+            android:hint="请输入密码" />
+    </com.design.appproject.widget.MyFrameLayout>
+    <com.design.appproject.widget.MyFlexBoxLayout
+        android:id="@+id/usertype_mfl"
+        style="@style/login_picker_box_style">
+        <com.design.appproject.widget.BottomSpinner
+            android:id="@+id/usertype_bs"
+            style="@style/login_picker_text_style"
+            android:text="请选择登录的用户类型" />
+    </com.design.appproject.widget.MyFlexBoxLayout>
+    <com.design.appproject.widget.MyButton
+        android:id="@+id/login_btn"
+        style="@style/login_login_btn"
+        android:gravity="center"
+        android:text="登录" />
+
+    <com.design.appproject.widget.MyFlexBoxLayout
+        style="@style/login_btn_box_style">
+        <com.design.appproject.widget.MyTextView
+            android:id="@+id/yonghu_tv"
+            style="@style/login_btn_register_style"
+            android:text="注册用户"/>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+</com.design.appproject.widget.MyLinearLayout>
+</com.design.appproject.widget.MyScrollView>

@@ -1,0 +1,31 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: "$rootDir/dependencies.gradle"
+    addRepos(repositories)
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
+        classpath "com.alibaba:arouter-register:1.0.2"
+    }
+}
+
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.google.android.exoplayer'
+                    && details.requested.name.contains('exoplayer')) {
+                details.useVersion "2.14.1"
+            }
+        }
+    }
+}
+
+allprojects {
+    addRepos(repositories)
+    configurations.all {
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

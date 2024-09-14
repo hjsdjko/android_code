@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/tabbar_backgroundColor"
+        app:itemIconSize="20dp"
+        app:itemTextColor="@color/home_selector_bottom_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/home_bottom_nav_menu" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

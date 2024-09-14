@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+apply from: "$rootDir/dependencies.gradle"
+
+android {
+    resourcePrefix "basic_"
+    compileSdk versions.compileSdk
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+        versionCode versions.versionCode
+        versionName versions.versionName
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api 'androidx.core:core-ktx:1.8.0'
+    api 'androidx.appcompat:appcompat:1.4.2'
+    api 'com.google.android.material:material:1.6.1'
+    api "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    //图片加载库
+    api 'com.github.bumptech.glide:glide:4.13.2'
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
+    //权限申请库
+    implementation 'com.guolindev.permissionx:permissionx:1.6.4'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api "com.squareup.retrofit2:converter-gson:2.9.0"
+    //tecent快速开发工具类 https://github.com/Tencent/QMUI_Android/wiki
+    api 'com.qmuiteam:qmui:2.0.1'
+    //图片库
+    implementation 'io.github.lucksiege:pictureselector:v3.0.9'
+    // 图片压缩 (按需引入)
+    implementation 'io.github.lucksiege:compress:v3.0.9'
+    // 图片裁剪 (按需引入)
+    implementation 'io.github.lucksiege:ucrop:v3.0.9'
+    implementation 'com.tencent:mmkv:1.2.13'
+    api("com.github.ihsanbal:LoggingInterceptor:3.1.0") {
+        exclude group: 'org.json', module: 'json'
+    }
+    api 'com.blankj:utilcodex:1.31.0'
+}

@@ -1,0 +1,2 @@
+rootProject.name = "appProject"
+include ':app',':union_basic'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/index_menu_item_box_style"
+    android:orientation="vertical">
+    <com.design.appproject.widget.MyTextView
+        style="@style/index_menu_item_img_style"
+        android:id="@+id/menu_icon_tv"/>
+    <com.design.appproject.widget.MyTextView
+        style="@style/index_menu_item_text_style"
+        android:id="@+id/menu_title_tv"/>
+</com.design.appproject.widget.MyLinearLayout>

@@ -1,0 +1,18 @@
+ext.versions = [
+        minSdk     : 21,
+        compileSdk : 33,
+        versionCode: 1,
+        versionName: '1.0.0',
+]
+
+static def addRepos(RepositoryHandler handler) {
+    handler.maven { url 'https://maven.aliyun.com/repository/public' }
+    handler.maven { url 'https://maven.aliyun.com/repositories/jcenter' }
+    handler.maven { url 'https://maven.aliyun.com/repositories/google' }
+    handler.maven { url 'https://maven.aliyun.com/repository/central' }
+    handler.google()
+    handler.mavenCentral()
+    handler.maven { url 'https://www.jitpack.io' }
+}
+
+ext.addRepos = this.&addRepos

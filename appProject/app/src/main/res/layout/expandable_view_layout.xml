@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.design.appproject.widget.MyFlexBoxLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_view_clickable_content">
+        <com.design.appproject.widget.MyTextView
+            style="@style/me_list_img_style"
+            android:visibility="gone"
+            android:id="@+id/icon_start_tv"/>
+        <com.design.appproject.widget.MyTextView
+            style="@style/me_list_text_style"
+            android:visibility="gone"
+            android:id="@+id/content_tv"/>
+        <com.design.appproject.widget.MyTextView
+            style="@style/me_list_icon_style"
+            android:visibility="gone"
+            android:id="@+id/icon_end_tv"/>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+    <com.design.appproject.widget.MyLinearLayout
+        android:id="@+id/expandable_view_content_layout"
+        style="@style/me_list_second_box_style"
+        android:layout_below="@id/expandable_view_clickable_content"
+        android:orientation="vertical">
+    </com.design.appproject.widget.MyLinearLayout>
+</merge>

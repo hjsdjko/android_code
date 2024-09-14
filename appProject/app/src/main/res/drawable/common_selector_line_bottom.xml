@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:state_selected="false">
+        <layer-list>
+            <item android:height="1dp" android:gravity="bottom|center">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <solid android:color="@color/common_title_gray_color2" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

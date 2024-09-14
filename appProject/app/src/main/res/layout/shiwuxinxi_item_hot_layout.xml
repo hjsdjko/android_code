@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    style="@style/list_hot_item_box_style">
+   <com.design.appproject.widget.MyImageView
+       android:id="@+id/hot_iv"
+       style="@style/list_hot_item_img_style"/>
+   <com.design.appproject.widget.MyTextView
+       android:id="@+id/wupinmingcheng_tv"
+       style="@style/list_hot_item_title_style"/>
+   <com.design.appproject.widget.MyTextView
+       android:id="@+id/diushididian_tv"
+       style="@style/list_hot_item_title_style"/>
+   <com.design.appproject.widget.MyTextView
+       android:id="@+id/wupinzhuangtai_tv"
+       style="@style/list_hot_item_title_style"/>
+
+</com.design.appproject.widget.MyFlexBoxLayout>

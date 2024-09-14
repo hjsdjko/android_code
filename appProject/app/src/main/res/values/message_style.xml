@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="publish_box_style">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="per_width">100%</item>
+        <item name="per_height">100%</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="css_position">relative</item>
+    </style>
+    <style name="publish_form_style">
+        <item name="android:paddingTop">12.0dp</item>
+        <item name="android:paddingRight">12.0dp</item>
+        <item name="android:paddingBottom">12.0dp</item>
+        <item name="android:paddingLeft">12.0dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="per_width">100%</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="publish_item_box_style">
+        <item name="qmui_radiusTopLeft">4.0dp</item>
+        <item name="qmui_radiusTopRight">0dp</item>
+        <item name="qmui_radiusBottomRight">0dp</item>
+        <item name="qmui_radiusBottomLeft">0dp</item>
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">2.0dp</item>
+        <item name="android:paddingLeft">24.0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">12.0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="per_width">100%</item>
+        <item name="alignItems">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="css_borderWidth">0 0 2rpx 0</item>
+        <item name="css_borderColor">#eeeeee</item>
+    </style>
+    <style name="publish_item_input_style">
+        <item name="qmui_radius">4.0dp</item>
+        <item name="qmui_borderWidth">0dp</item>
+        <item name="qmui_borderColor">#eeeeee</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">12.0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">12.0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+         <item name="android:textSize">14.0dp</item>
+        <item name="android:minHeight">40.0dp</item>
+        <item name="android:lineSpacingExtra">13.0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">40.0dp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="layout_flexGrow">1</item>
+    </style>
+    <style name="publish_item_textarea_style">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#666666</item>
+        <item name="layout_flexGrow">1</item>
+        <item name="android:minHeight">150.0dp</item>
+    </style>
+    <style name="publish_btn_box_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="per_width">100%</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="justifyContent">center</item>
+    </style>
+    <style name="publish_btn_submit_style">
+        <item name="qmui_borderWidth">0dp</item>
+        <item name="qmui_borderColor">#eeeeee</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:background">#1D5DCA</item>
+        <item name="android:layout_width">100.0dp</item>
+         <item name="android:textSize">14.0dp</item>
+        <item name="android:minHeight">40.0dp</item>
+        <item name="android:lineSpacingExtra">13.0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">40.0dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

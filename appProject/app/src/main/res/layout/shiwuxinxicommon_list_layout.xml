@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="outview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.design.appproject.widget.MyFlexBoxLayout
+            app:flexWrap="wrap"
+            style="@style/list_box_style">
+        <LinearLayout
+            android:id="@+id/search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/search_value_et"
+                style="@style/search_edit_style"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="match_parent"
+                android:hint="请输入搜索内容"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shape_radius360_gray"
+                android:text="搜索" />
+        </LinearLayout>
+        <com.design.appproject.widget.MyTextView
+            android:id="@+id/filter_tv"
+            android:text="筛选"
+            app:layout_flexBasisPercent="100%"
+            style="@style/list_category_screen_style"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.design.appproject.widget.MyLinearLayout
+                android:id="@+id/tab"
+                android:orientation="horizontal"
+                style="@style/list_category_box"/>
+        </HorizontalScrollView>
+        <com.design.appproject.widget.SmartRecyclerView
+            style="@style/list_list_box_style"
+            android:layout_height="match_parent"
+            android:id="@+id/srv"/>
+    </com.design.appproject.widget.MyFlexBoxLayout>
+    <com.design.appproject.widget.MyButton
+        style="@style/list_add_style"
+        android:text="新增"
+        android:gravity="center"
+        android:id="@+id/add_btn"/>
+</FrameLayout>
